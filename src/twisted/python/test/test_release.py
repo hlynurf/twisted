@@ -493,8 +493,8 @@ class APIBuilderTests(ExternalTempdirTestCase):
         # Here we check that it figured out the correct version based on the
         # source code.
         self.assertIn(
-            '<a href="https://github.com/twisted/twisted/tree/'
-            'twisted-1.0.0/src/twisted">View Source</a>',
+            '<a class="functionSourceLink" href="https://github.com/twisted/twisted/'
+            'tree/twisted-1.0.0/src/twisted/__init__.py#L1">',
             twistedPath.getContent().decode(),
         )
 
