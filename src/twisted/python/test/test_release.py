@@ -435,10 +435,6 @@ class APIBuilderTests(ExternalTempdirTestCase):
             "Docstring not in package documentation file.",
         )
         self.assertIn(
-            '<a href="{}/{}">View Source</a>'.format(sourceURL, packageName),
-            quuxPath.getContent().decode(),
-        )
-        self.assertIn(
             '<a class="functionSourceLink" href="%s/%s/__init__.py#L1">'
             % (sourceURL, packageName),
             quuxPath.getContent().decode(),
